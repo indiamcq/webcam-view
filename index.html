@@ -11,6 +11,11 @@ This was very helpful in figuring out the details of how to use getUserMedia:
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>FullScreen Viewer</title>
 		<style>
+		<!-- added by indiamcq -->
+			body {text-align:center;}
+			.body {background-color: black;}
+			div.docs {background-color:gray;width:auto; margin-top:20px;text-align:center;}
+		<!-- end additions -->
 			.videoContainer {
 				margin: 0px auto;
 				width: 64%;
@@ -123,17 +128,17 @@ This was very helpful in figuring out the details of how to use getUserMedia:
 		</script>
 	</head>
 	<!-- The (very few) HTML elements that make up the page - two buttons and a video preview window. -->
-	<body onload="onPageLoad()">
+	<body onload="onPageLoad()" class="body">
 		<div style="text-align:center;">
 			<button class="videoButton" onclick="openFullscreen();">Full Screen</button>
 			<button class="videoButton" onclick="changeInput();">Change Input</button>
-			<button class="videoButton" onclick="setMirror();">Mirror Video</button>
+			 <!-- <button class="videoButton" onclick="setMirror();">Mirror Video</button> no mirroring in this clone-->
 		</div>
 		<div id="videoContainer" class="videoContainer">
 			<video autoplay="true" id="videoElement" class="videoUnmirrored"></video>
 		</div>
-		<div style="text-align:center;">
-			Documentation and source code available on <a href="https://github.com/dhicks6345789/pi-view">Github</a>.
+		<div class="docs">
+			Documentation and source code available on <a href="https://github.com/indiamcq/webcam-view">Github</a> or the original <a href="https://github.com/dhicks6345789/pi-view">Github</a>.
 		</div>
 	</body>
 </html>
