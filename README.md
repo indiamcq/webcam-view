@@ -1,4 +1,4 @@
-# Pi-View
+# webcam-view a clone of Pi-View
 A handy full-screen video capture device input preview page.
 
 I forked this to add some notes. 
