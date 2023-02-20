@@ -1,6 +1,12 @@
 # Pi-View
 A handy full-screen video capture device input preview page.
 
+I forked this to add some notes. 
+
+I am running this on a Windows PC. It works well. I use it for full screen. When full screen the reverse image does not work. But I don't need that. The CPU load on my Ryzen 7 is only 1-2.5% which seems low for video. The lag is minimal.
+
+I am using miniserver a NodeJS app as the server. After the server is running and the page loads and has the correct webcam, you don't need to keep the server running, unless you press refresh.
+
 ![Pi View running on a Chromebook](pi-view.png)
 
 Just a single, basic HTML page with a simple video element in the middle that can be set to full screen.
