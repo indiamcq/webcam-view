@@ -9,12 +9,13 @@ This was very helpful in figuring out the details of how to use getUserMedia:
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>FullScreen Viewer</title>
+		<title>Full Screen Webcam Viewer</title>
 		<style>
 		<!-- added by indiamcq -->
 			body {text-align:center;}
 			.body {background-color: black;}
-			div.docs {background-color:gray;width:auto; margin-top:20px;text-align:center;}
+			div.docs {background-color:gray;width:50%; margin:20px auto 0 auto;text-align:center;}
+			.buttons {text-align:center;width:50%;margin: 0 auto 0 auto;}
 		<!-- end additions -->
 			.videoContainer {
 				margin: 0px auto;
@@ -129,7 +130,7 @@ This was very helpful in figuring out the details of how to use getUserMedia:
 	</head>
 	<!-- The (very few) HTML elements that make up the page - two buttons and a video preview window. -->
 	<body onload="onPageLoad()" class="body">
-		<div style="text-align:center;">
+		<div class="buttons" >
 			<button class="videoButton" onclick="openFullscreen();">Full Screen</button>
 			<button class="videoButton" onclick="changeInput();">Change Input</button>
 			 <!-- <button class="videoButton" onclick="setMirror();">Mirror Video</button> no mirroring in this clone-->
